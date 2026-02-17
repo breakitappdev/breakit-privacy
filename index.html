@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreakIt – Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:        #76968B;
+      --sage-light:  #A8C4BA;
+      --sage-dark:   #4A6B61;
+      --ink:         #1B2B26;
+      --ink-mid:     #3D5249;
+      --muted:       #7A9188;
+      --bg:          #F2F6F4;
+      --card:        #FFFFFF;
+      --border:      #D6E4DF;
+      --accent:      #E8F0EE;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── HERO ── */
+    header {
+      background: linear-gradient(135deg, #1B3029 0%, #2D4A3E 50%, #1B3029 100%);
+      padding: 72px 24px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 80%, rgba(118,150,139,.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(168,196,186,.10) 0%, transparent 55%);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(118,150,139,.25);
+      border: 1px solid rgba(168,196,186,.35);
+      color: var(--sage-light);
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      color: #fff;
+      line-height: 1.1;
+      position: relative;
+      margin-bottom: 16px;
+    }
+    header h1 span {
+      color: var(--sage-light);
+      font-style: italic;
+    }
+    header p {
+      color: rgba(255,255,255,.65);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .updated-pill {
+      display: inline-block;
+      margin-top: 20px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.5);
+      font-size: .75rem;
+      padding: 4px 14px;
+      border-radius: 100px;
+      position: relative;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── QUICK NAV ── */
+    .quick-nav {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin: 48px auto;
+      max-width: 780px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media(min-width:820px){
+      .quick-nav { margin-left: auto; margin-right: auto; }
+    }
+    .quick-nav h3 {
+      font-size: .7rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .quick-nav ol {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 24px;
+    }
+    @media(max-width:500px){ .quick-nav ol { grid-template-columns: 1fr; } }
+    .quick-nav a {
+      color: var(--sage-dark);
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 4px 0;
+      transition: color .2s;
+    }
+    .quick-nav a:hover { color: var(--sage); }
+    .quick-nav a::before {
+      content: '→';
+      font-size: .8rem;
+      color: var(--sage-light);
+    }
+
+    /* ── SECTIONS ── */
+    main { padding-bottom: 80px; }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 40px;
+      margin: 0 20px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    @media(min-width:820px){
+      .section { max-width: 780px; margin-left: auto; margin-right: auto; }
+    }
+    @media(max-width:520px){
+      .section { padding: 28px 22px; }
+    }
+    .section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--sage), var(--sage-light));
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px; height: 32px;
+      background: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--sage-dark);
+      margin-bottom: 14px;
+    }
+    .section h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.55rem;
+      color: var(--ink);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .section p, .section li {
+      color: var(--ink-mid);
+      font-size: .97rem;
+      margin-bottom: 10px;
+    }
+    .section ul, .section ol {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+    .section li { margin-bottom: 6px; }
+    strong { color: var(--ink); font-weight: 600; }
+
+    /* ── HIGHLIGHT BOXES ── */
+    .highlight {
+      background: var(--accent);
+      border-left: 3px solid var(--sage);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; font-size: .93rem; }
+
+    .no-collect {
+      background: #EBF5F0;
+      border: 1px solid #B8DDD0;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 16px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .no-collect .icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .no-collect p { margin: 0; font-size: .93rem; color: var(--ink-mid); }
+
+    /* ── PERMISSION TABLE ── */
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: .9rem;
+    }
+    .perm-table th {
+      background: var(--accent);
+      color: var(--ink);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--border);
+    }
+    .perm-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink-mid);
+      vertical-align: top;
+    }
+    .perm-table tr:last-child td { border-bottom: none; }
+    .perm-table tr:hover td { background: #fafcfb; }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: linear-gradient(135deg, #1B3029, #2D4A3E);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 0 20px;
+      text-align: center;
+      color: #fff;
+    }
+    @media(min-width:820px){
+      .contact-card { max-width: 780px; margin-left: auto; margin-right: auto; }
+    }
+    .contact-card h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .contact-card p {
+      color: rgba(255,255,255,.7);
+      margin-bottom: 20px;
+      font-size: .97rem;
+    }
+    .contact-card a {
+      display: inline-block;
+      background: var(--sage);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: .95rem;
+      transition: background .2s, transform .15s;
+    }
+    .contact-card a:hover { background: var(--sage-light); transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    footer a { color: var(--sage); text-decoration: none; }
+
+    /* ── SCROLL ANIMATION ── */
+    @media(prefers-reduced-motion: no-preference){
+      .section, .contact-card, .quick-nav {
+        opacity: 0;
+        transform: translateY(24px);
+        animation: fadeUp .55s ease forwards;
+      }
+      .section:nth-child(1)  { animation-delay: .05s; }
+      .section:nth-child(2)  { animation-delay: .10s; }
+      .section:nth-child(3)  { animation-delay: .15s; }
+      .section:nth-child(4)  { animation-delay: .20s; }
+      .section:nth-child(5)  { animation-delay: .25s; }
+      .section:nth-child(6)  { animation-delay: .30s; }
+      .section:nth-child(7)  { animation-delay: .35s; }
+      .section:nth-child(8)  { animation-delay: .40s; }
+      .section:nth-child(9)  { animation-delay: .45s; }
+      .section:nth-child(10) { animation-delay: .50s; }
+      @keyframes fadeUp {
+        to { opacity: 1; transform: none; }
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ HERO -->
+<header>
+  <div class="hero-badge">Legal Document</div>
+  <h1>BreakIt <span>Privacy Policy</span></h1>
+  <p>We built BreakIt to help you break bad habits — not to collect your data.</p>
+  <div class="updated-pill">Last updated: June 2025</div>
+</header>
+
+<!-- ═══════════════════════════════════════════ QUICK NAV -->
+<div class="quick-nav container">
+  <h3>Contents</h3>
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#data-collected">Data We Collect</a></li>
+    <li><a href="#data-not-collected">What We Don't Collect</a></li>
+    <li><a href="#permissions">App Permissions</a></li>
+    <li><a href="#data-storage">Data Storage</a></li>
+    <li><a href="#backup">Backup &amp; Export</a></li>
+    <li><a href="#third-party">Third-Party Services</a></li>
+    <li><a href="#children">Children's Privacy</a></li>
+    <li><a href="#changes">Policy Changes</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+<!-- ═══════════════════════════════════════════ MAIN -->
+<main>
+
+  <!-- 1. OVERVIEW -->
+  <div class="section" id="overview">
+    <div class="section-num">1</div>
+    <h2>Overview</h2>
+    <p>
+      BreakIt ("the App", "we", "us") is a personal habit-tracking application developed by <strong>GopheR</strong>
+      (<a href="mailto:breakit.app.dev@gmail.com">breakit.app.dev@gmail.com</a>). This Privacy Policy explains how the
+      App handles your information.
+    </p>
+    <div class="highlight">
+      <p>
+        <strong>Short version:</strong> All your personal data stays on your device.
+        We do not collect, transmit, sell, or share any personal information with third parties.
+      </p>
+    </div>
+    <p>
+      By installing or using BreakIt you agree to the terms described in this document.
+      If you do not agree, please uninstall the App.
+    </p>
+  </div>
+
+  <!-- 2. DATA WE COLLECT -->
+  <div class="section" id="data-collected">
+    <div class="section-num">2</div>
+    <h2>Data We Collect (Locally Only)</h2>
+    <p>
+      The App stores the following data <strong>exclusively on your device</strong>, using Android
+      SharedPreferences and local file storage. None of this data is transmitted to any server.
+    </p>
+    <ul>
+      <li><strong>Habit data</strong> – names, categories, start dates, daily cost/time values, goal types</li>
+      <li><strong>Reset / slip-up logs</strong> – date, optional reason text, optional lost amount</li>
+      <li><strong>Mood logs</strong> – mood entries linked to habits or daily check-ins</li>
+      <li><strong>Achievement records</strong> – which milestones you have unlocked and when</li>
+      <li><strong>App settings</strong> – theme preference, language, selected currency, notification times</li>
+      <li><strong>Security settings</strong> – a hashed (SHA-256) PIN code; the plain PIN is never stored after the first launch that applies the hash</li>
+      <li><strong>Notification schedule</strong> – chosen times for morning and evening reminders</li>
+    </ul>
+  </div>
+
+  <!-- 3. WHAT WE DON'T COLLECT -->
+  <div class="section" id="data-not-collected">
+    <div class="section-num">3</div>
+    <h2>What We Do <em>Not</em> Collect</h2>
+
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No analytics or tracking.</strong> BreakIt contains no analytics SDK, no crash-reporting service, and no advertising library.</p>
+    </div>
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No personal identity.</strong> We never ask for your name, email address, phone number, or any account credentials.</p>
+    </div>
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No location data.</strong> The App never accesses GPS or location services.</p>
+    </div>
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No camera or microphone.</strong> The App never accesses your camera or microphone.</p>
+    </div>
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No server-side storage.</strong> There is no BreakIt server, no cloud database, and no user account system.</p>
+    </div>
+    <div class="no-collect">
+      <span class="icon">🚫</span>
+      <p><strong>No biometric data stored.</strong> Biometric authentication (Face ID / fingerprint) is handled entirely by the operating system. BreakIt never receives or stores biometric templates.</p>
+    </div>
+  </div>
+
+  <!-- 4. PERMISSIONS -->
+  <div class="section" id="permissions">
+    <div class="section-num">4</div>
+    <h2>App Permissions Explained</h2>
+    <p>The following Android permissions are requested and the reason for each:</p>
+
+    <table class="perm-table">
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why It Is Needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>USE_BIOMETRIC</code></td>
+          <td>Optional PIN/biometric lock screen. Only invoked if you choose to enable it in Settings.</td>
+        </tr>
+        <tr>
+          <td><code>POST_NOTIFICATIONS</code></td>
+          <td>Required on Android 13+ to display your optional morning and evening reminder notifications.</td>
+        </tr>
+        <tr>
+          <td><code>VIBRATE</code></td>
+          <td>Vibration feedback for notifications.</td>
+        </tr>
+        <tr>
+          <td><code>WAKE_LOCK</code> / <code>RECEIVE_BOOT_COMPLETED</code></td>
+          <td>Ensures scheduled notifications are re-registered after the device reboots.</td>
+        </tr>
+        <tr>
+          <td><code>INTERNET</code></td>
+          <td>Used by the Google Fonts library to download fonts on first launch (display only). No personal data is sent.</td>
+        </tr>
+        <tr>
+          <td><code>READ_EXTERNAL_STORAGE</code> (API ≤ 32)</td>
+          <td>Allows you to select a backup file to restore. Only triggered when you tap "Import Backup".</td>
+        </tr>
+        <tr>
+          <td><code>WRITE_EXTERNAL_STORAGE</code> (API ≤ 28)</td>
+          <td>Allows saving backup files on older Android versions. Not used on Android 10+.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. DATA STORAGE -->
+  <div class="section" id="data-storage">
+    <div class="section-num">5</div>
+    <h2>Data Storage &amp; Security</h2>
+    <ul>
+      <li>All App data is stored in Android <strong>SharedPreferences</strong> and the App's private documents directory — both protected by Android's application sandbox.</li>
+      <li>Your PIN code is stored as a <strong>SHA-256 hash</strong> (salted). The plain-text PIN is discarded immediately after hashing.</li>
+      <li>Biometric data (fingerprint/face) is <strong>never accessed or stored</strong> by BreakIt — authentication is delegated entirely to the Android BiometricPrompt API.</li>
+      <li>Uninstalling the App removes all locally stored data from your device.</li>
+    </ul>
+  </div>
+
+  <!-- 6. BACKUP -->
+  <div class="section" id="backup">
+    <div class="section-num">6</div>
+    <h2>Backup &amp; Export Features</h2>
+    <p>
+      BreakIt includes an optional manual backup feature that creates an <strong>encrypted, XOR-obfuscated JSON file</strong>
+      on your device. You control where this file goes — you can save it to Google Drive, send it via email,
+      or store it locally.
+    </p>
+    <div class="highlight">
+      <p>
+        <strong>Important:</strong> When you share a backup file (e.g. to Google Drive or via messaging),
+        you are responsible for the security of that file. BreakIt cannot control how third-party cloud services
+        handle your data once you share it with them.
+      </p>
+    </div>
+    <p>The PDF export feature generates a summary report on-device and shares it via the standard Android share sheet.
+       Again, BreakIt does not receive or store this file — you choose the destination.</p>
+  </div>
+
+  <!-- 7. THIRD-PARTY SERVICES -->
+  <div class="section" id="third-party">
+    <div class="section-num">7</div>
+    <h2>Third-Party Services</h2>
+    <p>BreakIt uses the following third-party libraries. Each is used locally on your device:</p>
+    <ul>
+      <li>
+        <strong>Google Fonts</strong> – Downloads font files over the internet on first launch.
+        See <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts Privacy FAQ</a>.
+      </li>
+      <li>
+        <strong>flutter_local_notifications</strong> – Schedules on-device notifications. No network activity.
+      </li>
+      <li>
+        <strong>local_auth</strong> – Interfaces with Android BiometricPrompt. No data leaves the device.
+      </li>
+      <li>
+        <strong>share_plus / file_picker</strong> – Uses the standard Android share sheet and file picker.
+        Data destination is chosen by you.
+      </li>
+      <li>
+        <strong>PayPal / Revolut</strong> – The "Buy Me a Coffee" links in the Info screen are optional donation
+        links that open your browser. BreakIt does not process any payment information.
+      </li>
+    </ul>
+    <p>No advertising networks, analytics platforms, or data brokers are integrated into the App.</p>
+  </div>
+
+  <!-- 8. CHILDREN -->
+  <div class="section" id="children">
+    <div class="section-num">8</div>
+    <h2>Children's Privacy</h2>
+    <p>
+      BreakIt is not directed at children under the age of 13. We do not knowingly collect personal information
+      from children. Because all data is stored locally and no accounts are created, the risk of inadvertent
+      collection is minimal. If you are a parent and have concerns, please contact us.
+    </p>
+  </div>
+
+  <!-- 9. CHANGES -->
+  <div class="section" id="changes">
+    <div class="section-num">9</div>
+    <h2>Changes to This Policy</h2>
+    <p>
+      If we make material changes to this Privacy Policy, we will update the "Last updated" date at the top of this
+      page and, where appropriate, notify users through an in-app message with the next update.
+    </p>
+    <p>
+      Continued use of the App after changes are posted constitutes acceptance of the revised policy.
+    </p>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════ CONTACT -->
+<div class="contact-card" id="contact">
+  <h2>Questions? We're here.</h2>
+  <p>If you have any questions about this Privacy Policy or how BreakIt handles your data, reach out directly.</p>
+  <a href="mailto:breakit.app.dev@gmail.com">breakit.app.dev@gmail.com</a>
+</div>
+
+<!-- ═══════════════════════════════════════════ FOOTER -->
+<footer>
+  <p>© 2025 GopheR · BreakIt App · All rights reserved</p>
+  <p style="margin-top:6px;">
+    <a href="mailto:breakit.app.dev@gmail.com">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
