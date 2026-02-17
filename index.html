@@ -254,6 +254,40 @@
     }
     .perm-table tr:last-child td { border-bottom: none; }
     .perm-table tr:hover td { background: #fafcfb; }
+    
+    /* Mobil nézet - táblázat kártyává alakítása */
+    @media(max-width: 640px) {
+      .perm-table, .perm-table tbody, .perm-table tr, .perm-table td {
+        display: block;
+      }
+      .perm-table thead { display: none; }
+      .perm-table tr {
+        background: var(--accent);
+        border-radius: 12px;
+        margin-bottom: 12px;
+        padding: 14px;
+        border: 1px solid var(--border);
+      }
+      .perm-table td {
+        padding: 6px 0;
+        border: none;
+        text-align: left;
+      }
+      .perm-table td:first-child {
+        font-weight: 600;
+        color: var(--ink);
+        font-size: 1rem;
+        margin-bottom: 6px;
+      }
+      .perm-table td:first-child code {
+        background: var(--sage-light);
+        color: var(--sage-dark);
+        padding: 3px 8px;
+        border-radius: 6px;
+        font-size: .8rem;
+        font-family: 'Courier New', monospace;
+      }
+    }
 
     /* ── CONTACT CARD ── */
     .contact-card {
@@ -358,7 +392,7 @@
     <h2>Overview</h2>
     <p>
       BreakIt ("the App", "we", "us") is a personal habit-tracking application developed by <strong>GopheR</strong>
-      (<a href="mailto:breakit.app.dev@gmail.com">breakit.app.dev@gmail.com</a>). This Privacy Policy explains how the
+      (<a href="/cdn-cgi/l/email-protection#1b79697e7a70726f357a6b6b357f7e6d5b7c767a727735787476"><span class="__cf_email__" data-cfemail="76140413171d1f02581706065812130036111b171f1a5815191b">[email&#160;protected]</span></a>). This Privacy Policy explains how the
       App handles your information.
     </p>
     <div class="highlight">
@@ -559,16 +593,5 @@
 <div class="contact-card" id="contact">
   <h2>Questions? We're here.</h2>
   <p>If you have any questions about this Privacy Policy or how BreakIt handles your data, reach out directly.</p>
-  <a href="mailto:breakit.app.dev@gmail.com">breakit.app.dev@gmail.com</a>
+  <a href="/cdn-cgi/l/email-protection#6f0d1d0a0e04061b410e1f1f410b0a192f08020e0603410c0002"><span class="__cf_email__" data-cfemail="1270607773797b663c7362623c76776452757f737b7e3c717d7f">[email&#160;protected]</span></a>
 </div>
-
-<!-- ═══════════════════════════════════════════ FOOTER -->
-<footer>
-  <p>© 2025 GopheR · BreakIt App · All rights reserved</p>
-  <p style="margin-top:6px;">
-    <a href="mailto:breakit.app.dev@gmail.com">Contact</a>
-  </p>
-</footer>
-
-</body>
-</html>
